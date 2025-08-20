@@ -169,7 +169,7 @@ export const projects = [
     },
     img: "petronet.png",
     gallery: [
-      "pictures1.png", "pictures2.png", "pictures3.png", "pictures4.png", "pictures5.png", "eaton.jpg", "pictures6.png", "pictures7.png", "pictures8.png", "pictures9.png"
+      "picture1.png", "picture2.png", "picture3.png", "picture4.png", "picture5.png", "eaton.jpg", "picture6.png", "picture7.png", "picture8.png", "picture9.png"
     ],
     iconLists: ["js.svg", "diku.png", "skl.png", "d3.svg", "py.svg"],
     link: "https://docs.google.com/presentation/d/1H4a7FPSx3gqTmmdi4v5RiD5ZcWb0fGx0/edit?usp=drive_link&ouid=104230775237985945164&rtpof=true&sd=true",
