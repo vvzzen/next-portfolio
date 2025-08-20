@@ -20,7 +20,7 @@ const RecentProjects = () => {
               
               {/* Project Image */}
               <div className='relative w-full h-48 mb-6 rounded-2xl overflow-hidden bg-[#13162d]'>
-                <img src='/bg.png' alt='bg-img' className='w-full h-full object-cover'/>
+                <img src='bg.png' alt='bg-img' className='w-full h-full object-cover'/>
                 <img 
                   src={`${img}`} 
                   alt={title}

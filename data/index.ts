@@ -163,7 +163,7 @@ export const projects = [
       ],
       // githubLink: "https://github.com/alvinzainul",
       stats: {
-        models: "2 (pore pressure, lithology)",
+        models: "4 (pore pressure, lithology, insights, and chatbot)",
         accuracy: "79%"
       }
     },
@@ -188,7 +188,7 @@ export const projects = [
           "Hybrid model: HAT + Asymmetric Convolution",
           "Medical image super-resolution and upscaling",
           "Improved diagnostic value from affordable imaging devices",
-          "Accessible AI for healthcare"
+          "Accessible Deep Learning for healthcare"
         ],
         technical: [
           "Model architecture based on HAT (Hybrid Attention Transformer) with custom asymmetric convolution layers.",
