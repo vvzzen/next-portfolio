@@ -43,11 +43,11 @@ const Hero = () => {
 
                 <TextGenerateEffect 
                     className='text-center text-[28px] md:max-w-3xl md:text-[36px] mb-8'
-                    words="Building innovative solutions that bridge technology and business impact"
+                    words="Building innovative solutions that bridge technology and impact"
                 />
 
                 <p className='text-center lg:tracking-wider lg:text-lg mb-8 max-w-2xl text-gray-400'>
-                    Passionate about creating scalable software solutions and leading technical teams to deliver exceptional products that drive business growth.
+                    Passionate about creating scalable software solutions and leading technical teams to deliver exceptional products that solve impactful problems.
                 </p>
                 
                 <div className='flex gap-8'>

@@ -6,7 +6,7 @@ const RecentProjects = () => {
   return (
     <div id='projects' className='pt-20'>
       <h1 className="heading mt-5 text-3xl text-white font-bold text-center">
-        Some of my <br className='sm:hidden block'/>recent {' '} 
+        Some of my<br className='sm:hidden block'/>{' '} 
         <span className='relative inline-block'>
           <span className='text-blue-300'>projects</span>
           <img src='line.png' alt='path' className='w-[186px] h-[20px] absolute -bottom-6 z-0 '/>

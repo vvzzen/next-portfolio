@@ -2,9 +2,9 @@ import { cn } from "@/utils/cn";
 import { BackgroundGradientAnimation } from "./GradientBg";
 import {GlobeDemo} from './GridGlobe'
 import Image from 'next/image'
-import NormalButton from "./NormalButton";
-import ShimmerButton from "./ShimmerButton";
 import ResumeButton from './ResumeButton'
+// import image from "../../public/profile.png"
+
 
 export const BentoGrid = ({
   className,
@@ -90,7 +90,7 @@ export const BentoGridItem = ({
         <div className={cn(
           titleClassName, ' transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5', {'group-hover/bento:translate-x-2' : id !== 6}
         )}>
-          <div className="font-sans font-extralight md:max-w-32 md:text-sm text-xs text-[#C1C2D3] z-10">
+          <div className="font-sans font-extralight md:max-w-[240] md:text-sm text-xs text-[#C1C2D3] z-10">
             {description}
           </div>
           <div className="font-sans font-bold text-lg lg:text-2xl max-w-96 z-10">
@@ -101,12 +101,16 @@ export const BentoGridItem = ({
         {id === 1  && <GlobeDemo />}
 
         {id === 4 && (
-          <div className="flex items-center justify-center h-full">
-            <div className="text-center p-4">
-              <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-gradient-to-r from-blue-500 to-red-500 flex items-center justify-center">
-                <span className="text-6xl">👨‍💻</span>
-              </div>
-              <p className="text-sm text-gray-400">Replace with your professional photo</p>
+          <div className="flex flex-col items-center justify-center h-full p-4">
+            <div className="w-32 h-32 mb-4 rounded-full overflow-hidden border-2 border-white/20 shadow-lg">
+              <Image
+                src="/profile.png"
+                priority={true}
+                alt="Professional photo"
+                width={128}
+                height={128}
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         )}

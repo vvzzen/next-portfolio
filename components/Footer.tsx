@@ -23,7 +23,7 @@ const Footer = () => {
             <p className='text-white-200 mt-10 my-5 text-center'> Let's discuss how I can increase the value in your next tech project.
             </p>
 
-            <a href='mailto:alvin@example.com?subject=Work Inquiry'>
+            <a href='mailto:alvin@polariscorps.com?subject=Work Inquiry'>
                 {/* <NormalButton
                 title='Email'
                 position='right'

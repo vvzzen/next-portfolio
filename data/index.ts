@@ -11,7 +11,7 @@ export const navItems = [
       id: 1,
       title: "Innovative Software Engineer & Technical Leader",
       description: "Building scalable solutions for modern challenges",
-      className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
+  className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[18vh]",
       imgClassName: "flex flex-col",
       titleClassName: "justify-start text-[20px]",
       spareImg: "",
@@ -20,7 +20,7 @@ export const navItems = [
       id: 2,
       title: "Quality-Driven Development",
       description: "I prioritize clean code and best practices",
-      className: "lg:col-span-2 md:col-span-3 md:row-span-2",
+  className: "lg:col-span-2 md:col-span-3 md:row-span-2 lg:min-h-[12vh]",
       imgClassName: "",
       titleClassName: "justify-start",
       img: "grid.svg",
@@ -30,26 +30,26 @@ export const navItems = [
       id: 3,
       title: "My Tech Stack",
       description: "Full-stack expertise with modern technologies",
-      className: "lg:col-span-2 md:col-span-3 md:row-span-2",
+  className: "lg:col-span-2 md:col-span-3 md:row-span-2 lg:min-h-[12vh]",
       imgClassName: "",
       titleClassName: "justify-start",
       img: "grid.svg",
     },
     {
       id: 4,
-      title: "About Me - Photo",
-      description: "Add your professional photo here",
-      className: "lg:col-span-2 md:col-span-3 md:row-span-2",
+      title: "About Me",
+      description: "Software Engineer & Technical Leader",
+  className: "lg:col-span-1 md:col-span-3 md:row-span-2 lg:min-h-[4vh]",
       imgClassName: "opacity-50 w-full h-full object-cover",
       titleClassName: "justify-center items-center text-center",
-      img: "profile.svg",
+      img: "profile.png",
       spareImg: "",
     },
     {
       id: 5,
       title: "Ready to Collaborate",
       description: "Let's build something amazing together!",
-      className: "lg:col-span-2 md:col-span-3 md:row-span-2",
+  className: "lg:col-span-2 md:col-span-3 md:row-span-2 lg:min-h-[6vh]",
       imgClassName: "absolute right-0 bottom-0 w-60",
       titleClassName: "justify-start",
       img: "b5.svg",
@@ -59,7 +59,7 @@ export const navItems = [
       id: 6,
       title: "My Resume",
       description: "Updated August 2025",
-      className: "lg:col-span-1 md:col-span-3 md:row-span-2",
+  className: "lg:col-span-2 md:col-span-3 md:row-span-2 lg:min-h-[6vh]",
       imgClassName: "",
       titleClassName: "top-5 max-w-60 text-center justify-center items-center",
       img: "",
@@ -107,12 +107,47 @@ export const projects = [
     link: "https://github.com/alvinzainul",
   },
   {
-    id: 2,
-    title: "AI-Powered Analytics Dashboard",
-    des: "Built an intelligent analytics platform with real-time data processing and machine learning insights for business decision making.",
+    id: 5,
+    title: "Integrated Fluid Interpretation System",
+    des: "Developed a webapp and ML-driven workflow for petrophysical fluid interpretation, integrating Python, Dataiku, Django, and visualization with three.js as part of research",
     expandedContent: {
       overview: [
-        "Developed an advanced analytics platform that processes over 1M+ data points daily, providing real-time insights and predictive analytics for business decision making.",
+        "A comprehensive solution for petrophysical fluid interpretation, combining advanced data processing, machine learning, and interactive visualization.",
+        "Key contributions include a novel surrounding well module for attribute-based calculations, ML scoring for fluid interpretation, and a performant web interface for massive log data."
+      ],
+      features: [
+        "Surrounding well module for petrophysical calculation influenced by logs in the well path surrounding proximity",
+        "ML-based scoring for fluid interpretation results",
+        "Interactive log display with three.js/WebGL for large datasets",
+        "User-friendly webapp interface with Next.js, TypeScript, and Tailwind CSS",
+        "Backend powered by Python (Django) and PostgreSQL",
+        "Collaborative design and requirements gathering with stakeholders"
+      ],
+      technical: [
+  "Data processing pipelines built in Dataiku using Python for feature engineering and attribute extraction, including development of a surrounding well module to calculate petrophysical values based on neighboring wells' attributes and improve interpretation accuracy. Implemented machine learning models to score and validate fluid interpretation results. Frontend webapp built with Next.js, leveraging three.js/WebGL for efficient rendering of massive log data. Backend services developed in Python with Django, using PostgreSQL for data storage and management."
+      ],
+      challenges: [
+  "Displaying very large log datasets is challenging, which led to leveraging three.js/WebGL for performance; however, three.js/WebGL has a steep learning curve and required significant time investment. Designing a flexible data model to support various well sets was also an interesting issue to tackle. On the other hand, bridging data science, engineering, and geosciences requires tactful communication."
+      ],
+      // githubLink: "https://github.com/alvinzainul",
+      stats: {
+        wells: "2900+",
+        logs: "3B+ entries",
+        // performance: "Real-time rendering",
+        accuracy: "In progress +80%"
+      }
+    },
+    img: "placeholder.png",
+    iconLists: ["js.svg", "tail.svg", "three.svg", "py.svg", "na.svg", "mdb.svg"],
+    link: "https://github.com/alvinzainul",
+  },
+  {
+    id: 2,
+    title: "AI-Powered Analytics Dashboard",
+  des: "Built an intelligent analytics platform with real-time data processing and machine learning insights for solving impactful cross-discipline problems.",
+    expandedContent: {
+      overview: [
+  "Developed an advanced analytics platform that processes over 1M+ data points daily, providing real-time insights and predictive analytics for solving impactful cross-discipline problems.",
         "The platform combines machine learning algorithms with an intuitive React frontend to deliver actionable insights that reduced manual analysis time by 80%."
       ],
       features: [
@@ -311,7 +346,7 @@ export const projects = [
     {
       id: 4,
       title: "Product Strategy & Innovation",
-      desc: "Bridging business requirements with technical solutions to deliver impactful products",
+  desc: "Bridging cross-discipline requirements with technical solutions to deliver impactful products",
       className: "md:col-span-2",
       thumbnail: "exp4.svg",
     },
@@ -320,27 +355,22 @@ export const projects = [
       title: "AI/ML Development & Deployment",
       desc: "Leveraging most recent technologies to build intelligent applications and streamline deployment processes",
       className: "md:col-span-2",
-      thumbnail: "exp4.svg",
+      thumbnail: "exp5.svg",
     },
     {
       id: 6,
       title: "Cross-Disciplinary Communication & Problem Solving",
       desc: "Skilled at translating complex concepts, solving problems, and communicating effectively across diverse disciplines and teams",
       className: "md:col-span-2",
-      thumbnail: "exp4.svg",
+      thumbnail: "exp6.svg",
     },
   ];
   
   export const socialMedia = [
     {
-      id: 2,
-      img: "home.svg",
-      url:'https://alvinzainul.dev' // Update this to your actual portfolio URL
-    },
-    {
       id: 1,
       img: "git.svg",
-      url:'https://github.com/alvinzainul' // Update this to your actual GitHub
+      url:'https://github.com/vvzzen' // Update this to your actual GitHub
     },
     {
       id: 3,
