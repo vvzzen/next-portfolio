@@ -176,7 +176,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
                 <h3 className="text-lg font-bold text-white mb-4">Project Links</h3>
                 <div className="space-y-3">
                   <a
-                    href={project.link}
+                    href={project.link[0]}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 text-blue-300 hover:text-blue-200 transition-colors p-3 rounded-xl bg-black/30 hover:bg-black/50"
@@ -184,7 +184,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                   </svg>
-                  Live Demo
+                  {project.link[1]}
                 </a>
                 
                 {project.expandedContent?.githubLink && (
@@ -210,7 +210,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
                 <div className="space-y-3">
                   {Object.entries(project.expandedContent.stats).map(([key, value]) => (
                     <div key={key} className="flex justify-between items-center">
-                      <span className="text-gray-300 capitalize">{key.replace(/([A-Z])/g, ' $1')}</span>
+                      <span className="text-gray-300 capitalize">{key.replace(/_/g, ' ').replace(/([A-Z])/g, ' $1')}</span>
                       <span className="text-blue-300 font-medium">{value}</span>
                     </div>
                   ))}

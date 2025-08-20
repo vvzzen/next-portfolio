@@ -163,7 +163,7 @@ export const projects = [
       ],
       // githubLink: "https://github.com/alvinzainul",
       stats: {
-        models: "4 (pore pressure, lithology, insights, and chatbot)",
+        models: "4",
         accuracy: "79%"
       }
     },
@@ -172,7 +172,7 @@ export const projects = [
       "picture1.png", "picture2.png", "picture3.png", "picture4.png", "picture5.png", "eaton.jpg", "picture6.png", "picture7.png", "picture8.png", "picture9.png"
     ],
     iconLists: ["js.svg", "diku.png", "skl.png", "d3.svg", "py.svg"],
-    link: "https://docs.google.com/presentation/d/1H4a7FPSx3gqTmmdi4v5RiD5ZcWb0fGx0/edit?usp=drive_link&ouid=104230775237985945164&rtpof=true&sd=true",
+    link: ["https://docs.google.com/presentation/d/1H4a7FPSx3gqTmmdi4v5RiD5ZcWb0fGx0/edit?usp=drive_link&ouid=104230775237985945164&rtpof=true&sd=true","Pitch Deck"],
     },
     {
       id: 4,
@@ -180,9 +180,7 @@ export const projects = [
       des: "Assimilated HAT model and Asymmetric Convolution to upscale medical images, making affordable imaging machines more useful for diagnosis.",
       expandedContent: {
         overview: [
-          "Developed a hybrid model combining HAT (Hybrid Attention Transformer) and Asymmetric Convolution to enhance and upscale medical images.",
-          "Aimed to make medical imaging more accessible by improving results from lower-end, affordable, and widely available imaging machines.",
-          "Supports better diagnosis by providing higher quality images from less capable hardware."
+          "Developed a hybrid model combining HAT (Hybrid Attention Transformer) and Asymmetric Convolution to enhance and upscale medical images aimed to make medical imaging more accessible by improving results from lower-end, affordable, and widely available imaging machines. This in turns, supports better diagnosis by providing higher quality images from less capable hardware."
         ],
         features: [
           "Hybrid model: HAT + Asymmetric Convolution",
@@ -191,25 +189,20 @@ export const projects = [
           "Accessible Deep Learning for healthcare"
         ],
         technical: [
-          "Model architecture based on HAT (Hybrid Attention Transformer) with custom asymmetric convolution layers.",
-          "Trained on medical imaging datasets for super-resolution tasks.",
-          "Implemented in Python using PyTorch and TensorFlow."
+          "Model architecture based on HAT (Hybrid Attention Transformer) with custom asymmetric convolution layers trained trained on medical imaging datasets of Brain Tumor MRIs, Lung Cancer CTs, and bon fracture X-rays for super-resolution tasks. Implemented in Python using PyTorch and TensorFlow."
         ],
         challenges: [
-          "Integrating transformer-based attention with convolutional upscaling.",
-          "Ensuring model generalizes well to various imaging modalities and device qualities.",
-          "Balancing performance and computational efficiency for real-world deployment."
+          "Integrating transformer-based attention with convolutional upscaling. Ensuring model generalizes well to various imaging modalities and device qualities. Balancing performance and computational efficiency for real-world deployment."
         ],
         // githubLink: "https://github.com/alvinzainul",
         stats: {
-          modalities: "3+",
-          images: "10,000+",
-          improvement: "+30% PSNR"
+          trained_on: "17,000+ images",
+          improvement: "+10% PSNR"
         }
       },
-      img: "placeholder.png",
+      img: "skripsicover.png",
       gallery: [
-        "placeholder.png"
+        "skripsiarch.png", "skripsiflow.png", "skripsiprepro.png", "skripsischeme.png", "skripsipsnr.png", "skripsiresult.png"
       ],
       iconLists: ["py.svg", "skl.png", "tf.svg"],
       // link: "https://github.com/alvinzainul",
@@ -220,36 +213,30 @@ export const projects = [
       des: "Robust ETL pipeline on Azure: ingested SAP and OBD data, transformed with Spark for dynamic pricing, customer, and asset monitoring.",
       expandedContent: {
         overview: [
-          "Built a robust ETL pipeline on Azure to ingest and consolidate SAP and generated OBD data.",
-          "Transformed and prepared data for use in key business projects such as dynamic pricing, customer monitoring, and asset monitoring."
+          "Built a robust ETL pipeline on Azure to ingest and consolidate SAP and generated OBD data. Then transformed and prepared data for use in key business projects such as dynamic pricing, customer monitoring, and asset monitoring."
         ],
         features: [
-          "Data ingestion from SAP and OBD sources",
+          "Data ingestion from SAP tables, OBD, and FTP sources",
           "Data consolidation and cleaning",
           "Transformation using Apache Spark",
           "Support for dynamic pricing, customer, and asset monitoring use cases"
         ],
         technical: [
-          "Azure Data Factory for orchestration and pipeline management.",
-          "Apache Spark for scalable data transformation and processing.",
-          "Integration with Azure Data Lake and downstream analytics platforms."
+          "Azure Data Factory is used for orchestration and pipeline management, while Apache Spark is used for scalable data transformation and processing. Used and Integrated with Azure Data Lake and downstream analytics platforms."
         ],
         challenges: [
-          "Handling large-scale, heterogeneous data sources (SAP, OBD).",
-          "Ensuring data quality and reliability throughout the pipeline.",
-          "Optimizing Spark jobs for performance and cost on Azure."
+          "Handling large-scale, heterogeneous data sources (SAP, OBD). Ensuring data quality and reliability throughout the pipeline. Optimizing Spark jobs for performance and cost on Azure."
         ],
         // githubLink: "https://github.com/alvinzainul",
         stats: {
           sources: "SAP, OBD",
-          volume: "TBs+",
-          useCases: "Dynamic pricing, monitoring"
+          volume: "TBs+ daily",
         }
       },
-      img: "placeholder.png",
-      gallery: [
-        "placeholder.png"
-      ],
+      img: "etl.png",
+      // gallery: [
+      //   "placeholder.png"
+      // ],
       iconLists: ["azure.svg", "spark.svg", "py.svg", "sap.svg"],
       // link: "https://github.com/alvinzainul",
       },
@@ -259,9 +246,7 @@ export const projects = [
         des: "Profile and inquiry website for 180DC UGM, combining WordPress CMS and React with a functional client inquiry form.",
         expandedContent: {
           overview: [
-            "Developed the official profile website for 180DC UGM, integrating WordPress for content management and React for a modern frontend.",
-            "Implemented a functional inquiry form as a starting point for potential client engagement.",
-            "Site is no longer maintained by me, but the groundwork and architecture remain the same."
+            "Developed the official profile website for 180DC UGM, integrating WordPress for content management and React for a modern frontend. Implemented a functional inquiry form as a starting point for potential client engagement. Site is no longer maintained by me, but the groundwork and architecture remain the same."
           ],
           features: [
             "WordPress-powered content management",
@@ -269,26 +254,16 @@ export const projects = [
             "Functional client inquiry form"
           ],
           technical: [
-            "WordPress as headless CMS, React for frontend.",
-            "Form handling and integration with backend for inquiries."
+            "WordPress as headless CMS and React for frontend. Form handling and integration with backend was done for inquiries."
           ],
           challenges: [
-            "Integrating WordPress with a custom React frontend.",
-            "Ensuring smooth content updates and form submissions."
+            "Integrating WordPress with a custom React frontend and ensuring smooth content updates and form submissions."
           ],
           link: "https://www.180dcugm.org/",
-          stats: {
-            inquiries: "Active during tenure",
-            cms: "WordPress",
-            frontend: "React"
-          }
         },
-        img: "placeholder.png",
-        gallery: [
-          "placeholder.png"
-        ],
+        img: "180dc.png",
         iconLists: ["re.svg", "tail.svg", "wp.svg"],
-        link: "https://www.180dcugm.org/",
+        link: ["https://www.180dcugm.org/", "Website"],
       },
       {
         id: 7,
@@ -305,26 +280,20 @@ export const projects = [
             "Virtual exhibition via Unity embedding"
           ],
           technical: [
-            "Frontend built with React and GSAP for animation.",
-            "Unity WebGL embedded for virtual exhibition experience."
+            "Frontend built with React and GSAP for animation. Unity WebGL embedded for virtual exhibition experience."
           ],
           challenges: [
-            "Coordinating content and features for a large-scale university event.",
-            "Integrating Unity WebGL smoothly into the webapp."
+            "Coordinating content, features, and teams to operate the web for a large-scale university event. Integrating Unity WebGL smoothly into the webapp."
           ],
           link: "https://ukm.ugm.ac.id/2022/gelex/",
           stats: {
-            visitors: "Thousands+",
+            concurrent_visitors: "Tens of Thousands+",
             orgs: "50+",
-            virtual: "Unity WebGL"
           }
         },
-        img: "placeholder.png",
-        gallery: [
-          "placeholder.png"
-        ],
+        img: "gelex.png",
         iconLists: ["re.svg", "ts.svg", "tail.svg", "gsap.svg", "unity.svg"],
-        link: "https://ukm.ugm.ac.id/2022/gelex/",
+        link: ["https://ukm.ugm.ac.id/2022/gelex/", "Website"],
       },
       {
         id: 8,
@@ -342,26 +311,22 @@ export const projects = [
             "Comprehensive event information"
           ],
           technical: [
-            "Frontend in React, backend in Express.js.",
-            "Firebase NoSQL for real-time data and updates."
+            "Frontend in React, backend in Express.js with Firebase NoSQL for real-time data and updates."
           ],
           challenges: [
-            "Handling real-time updates for large numbers of users.",
-            "Ensuring data consistency and reliability with Firebase."
+            "Handling real-time updates for large numbers of users and ensuring data consistency and reliability with Firebase."
           ],
           link: "https://ukm.ugm.ac.id/2021/porsenigama/",
           stats: {
-            faculties: "18+",
+            faculties: "18",
             matches: "100+",
-            live: "Real-time updates"
+            concurrent_visitors: "Tens of Thousands+",
           }
         },
-        img: "placeholder.png",
-        gallery: [
-          "placeholder.png"
-        ],
+        img: "porseni.png",
+        gallery: ["porseold.png"],
         iconLists: ["re.svg", "js.svg", "tail.svg", "ex.svg", "fbase.svg"],
-        link: "https://ukm.ugm.ac.id/2021/porsenigama/",
+        link: ["https://ukm.ugm.ac.id/2021/porsenigama/", "Website"],
       },
 ];  export const testimonials = [
     {
