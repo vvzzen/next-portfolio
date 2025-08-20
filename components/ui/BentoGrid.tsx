@@ -3,8 +3,6 @@ import { BackgroundGradientAnimation } from "./GradientBg";
 import {GlobeDemo} from './GridGlobe'
 import Image from 'next/image'
 import ResumeButton from './ResumeButton'
-import image from "profile.png"
-
 
 export const BentoGrid = ({
   className,
@@ -104,7 +102,7 @@ export const BentoGridItem = ({
           <div className="flex flex-col items-center justify-center h-full p-4">
             <div className="w-32 h-32 mb-4 rounded-full overflow-hidden border-2 border-white/20 shadow-lg">
               <Image
-                src="/profile.png"
+                src="profile.png"
                 priority={true}
                 alt="Professional photo"
                 width={128}

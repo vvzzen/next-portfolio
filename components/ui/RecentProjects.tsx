@@ -22,7 +22,7 @@ const RecentProjects = () => {
               <div className='relative w-full h-48 mb-6 rounded-2xl overflow-hidden bg-[#13162d]'>
                 <img src='/bg.png' alt='bg-img' className='w-full h-full object-cover'/>
                 <img 
-                  src={`/${img}`} 
+                  src={`${img}`} 
                   alt={title}
                   className='absolute bottom-0 left-1/2 transform -translate-x-1/2 max-h-full object-contain'
                 />
@@ -46,7 +46,7 @@ const RecentProjects = () => {
                     key={index} 
                     className='w-8 h-8 rounded-full bg-gray-700 border border-white/20 flex justify-center items-center'
                   >
-                    <img src={`/${icon}`} alt={icon} className='w-4 h-4' />
+                    <img src={`${icon}`} alt={icon} className='w-4 h-4' />
                   </div>
                 ))}
                 {iconLists.length > 5 && (

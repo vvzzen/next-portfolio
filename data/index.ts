@@ -132,7 +132,7 @@ export const projects = [
         vehicles: "200,000+"
       }
     },
-    img: "sipab.png",
+    img: "sipab.svg",
     gallery: [
       "sipabform.png"
     ],
@@ -141,12 +141,12 @@ export const projects = [
   },{
     id: 3,
     title: "PetroNet",
-    des: "Dataiku webapp for ML-driven pore pressure prediction, featuring log display, chatbot, and ML insights.",
+    des: "Dataiku webapp for ML-driven pore pressure prediction, featuring lithology prediction, log display, chatbot, and ML insights.",
     expandedContent: {
       overview: [
-        "Developed as a Dataiku webapp (pure HTML, CSS, JS) serving as an interface to a machine learning model for pore pressure prediction.",
-        "The app provides interactive log display using d3.js, a chatbot for user queries, and ML-generated insights to assist geoscientists and engineers.",
-        "Developed supporting ML models to predict lithology, enhancing the accuracy of pore pressure predictions."
+        "Developed as a Dataiku webapp (pure HTML, CSS, JS) serving as an interface to a machine learning model for pore pressure prediction with multiple methods.",
+        "The app provides lithology prediction to supplement pore pressure prediction, interactive log display using d3.js, a chatbot for user queries, and ML-generated insights to assist geoscientists and engineers.",
+        "Developed as a project for SCALEUP-2025 Hackathon."
       ],
       features: [
         "Interactive log display with d3.js visualization",
@@ -155,21 +155,16 @@ export const projects = [
         "Seamless integration with Dataiku ML pipelines"
       ],
       technical: [
-        "Frontend built as a single-page webapp using HTML, CSS, and JavaScript for maximum compatibility with Dataiku webapp requirements.",
-        "Log visualization implemented with d3.js for interactive and scalable data display.",
-        "Chatbot built with vanilla JS, integrated with backend ML models via Dataiku APIs.",
-        "ML models for pore pressure and lithology prediction developed and deployed within Dataiku."
+        "Frontend built as a single-page webapp using HTML, CSS, and JavaScript for maximum compatibility with Dataiku webapp requirements. Log visualization implemented with d3.js for interactive and scalable data display.",
+        "Chatbot built with vanilla JS, integrated with backend ML models via Dataiku APIs, on top of ML models for pore pressure and lithology prediction developed and deployed within Dataiku."
       ],
       challenges: [
-        "Building a rich, interactive UI using only vanilla JS, HTML, and CSS (no frameworks) to comply with Dataiku webapp constraints.",
-        "Integrating real-time ML predictions and insights into the webapp interface.",
-        "Ensuring accurate lithology prediction to support reliable pore pressure results."
+        "Building a rich, interactive UI using only vanilla JS, HTML, and CSS (no frameworks) to comply with Dataiku webapp constraints. Integrating real-time ML predictions and insights into the webapp interface. Ensuring accurate lithology prediction to support reliable pore pressure results."
       ],
       // githubLink: "https://github.com/alvinzainul",
       stats: {
-        wells: "100+",
-        logs: "1M+ entries",
-        models: "2 (pore pressure, lithology)"
+        models: "2 (pore pressure, lithology)",
+        accuracy: "79%"
       }
     },
     img: "placeholder.png",
@@ -177,7 +172,7 @@ export const projects = [
       "placeholder.png"
     ],
     iconLists: ["js.svg", "diku.png", "skl.png", "d3.svg", "py.svg"],
-    // link: "https://github.com/alvinzainul",
+    link: "https://docs.google.com/presentation/d/1H4a7FPSx3gqTmmdi4v5RiD5ZcWb0fGx0/edit?usp=drive_link&ouid=104230775237985945164&rtpof=true&sd=true",
     },
     {
       id: 4,
