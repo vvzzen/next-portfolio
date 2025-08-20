@@ -6,8 +6,8 @@ import { ThemeProvider } from "./provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Joe's Portfolio",
-  description: "Created with Next.js, TypeScript and Deployed on Github Pages",
+  title: "Alvin Zainul - Software Engineer",
+  description: "Software Engineer specializing in full-stack development, technical leadership, and innovative solutions. Built with Next.js, TypeScript, and modern technologies.",
 };
 
 export default function RootLayout({

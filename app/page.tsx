@@ -25,7 +25,9 @@ export default function Home() {
       }
         />
         <Hero />
-        <Grid />
+        <div id="about">
+          <Grid />
+        </div>
         <RecentProjects />
         <Skills />
         <Footer />

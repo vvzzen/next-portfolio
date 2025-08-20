@@ -16,7 +16,7 @@ export const BentoGrid = ({
   return (
     <div
       className={cn(
-        "grid grid-cols-1 md:grid-cols-6 lg:grid-cols-5 md:grid-row-7 gap-4 lg:gap-8 mx-auto",
+        "grid grid-cols-1 md:grid-cols-6 lg:grid-cols-5 gap-4 lg:gap-8 mx-auto",
         className
       )}
     >
@@ -100,11 +100,22 @@ export const BentoGridItem = ({
 
         {id === 1  && <GlobeDemo />}
 
+        {id === 4 && (
+          <div className="flex items-center justify-center h-full">
+            <div className="text-center p-4">
+              <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-gradient-to-r from-blue-500 to-red-500 flex items-center justify-center">
+                <span className="text-6xl">👨‍💻</span>
+              </div>
+              <p className="text-sm text-gray-400">Replace with your professional photo</p>
+            </div>
+          </div>
+        )}
+
         {id === 3 && (
           <div className="flex gap-1 lg:gap-5 absolute w-fit -right-3 lg:-right-2">
             <div className="flex flex-col gap-3 ">
-              {['React', 'Next', 'TypeScript'].map((item) => (
-                <span key={item} className="py-2  lg:px-3 px-3 text-xs opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132e]">
+              {['Python', 'TensorFlow', 'Spark', 'Azure'].map((item) => (
+                <span key={item} className="py-2 lg:px-3 px-3 text-xs opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132e]">
                   {item}
                 </span>
               ))}
@@ -112,8 +123,8 @@ export const BentoGridItem = ({
               </div>
               <div className="flex flex-col gap-3 ">
                 <span className="py-4 px-3 rounded-lg text-center bg-[#10132e]"/>
-              {['JavaScript', 'Tailwind', 'Express'].map((item) => (
-                <span key={item} className="py-2  lg:px-3 px-3 text-xs opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132e]">
+              {['TypeScript', 'Next.js', 'React Native', 'Docker'].map((item) => (
+                <span key={item} className="py-2 lg:px-3 px-3 text-xs opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132e]">
                   {item}
                 </span>
               ))}
@@ -122,15 +133,10 @@ export const BentoGridItem = ({
         )}
 
         {id === 6 && (
-          <div className="flex flex-col items-center relative">
-            <div id="#resume" className={`absolute mt-1`}>
-
-            <ResumeButton 
-            
-            />
-
+          <div className="flex flex-col items-center justify-center relative h-full">
+            <div className={`relative z-10`}>
+            <ResumeButton />
             </div>
-
           </div>
         )}
       </div>

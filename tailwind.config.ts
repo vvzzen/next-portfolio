@@ -57,6 +57,12 @@ const config = {
         },
         blue: {
           "100": "#E4ECFF",
+          "300": "#3B82F6", // Changed from previous blue-300
+        },
+        red: {
+          "300": "#DC2626", // Main red accent color
+          "400": "#EF4444", // Lighter red
+          "500": "#B91C1C", // Darker red
         },
         purple: "#CBACF9",
         border: "hsl(var(--border))",

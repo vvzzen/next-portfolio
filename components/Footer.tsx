@@ -23,7 +23,7 @@ const Footer = () => {
             <p className='text-white-200 mt-10 my-5 text-center'> Let's discuss how I can increase the value in your next tech project.
             </p>
 
-            <a href='mailto:aguado.joe@gmail.com?subject=Work Inquiry'>
+            <a href='mailto:alvin@example.com?subject=Work Inquiry'>
                 {/* <NormalButton
                 title='Email'
                 position='right'
@@ -36,9 +36,9 @@ const Footer = () => {
                 />
             </a>
         </div>
-        <div className="flex mt-16 md:flex-row flex-col flex-col-reverse justify-between items-center">
+        <div className="flex mt-16 md:flex-row flex-col-reverse justify-between items-center">
         <p className="sm:text-sm text-xs md:font-normal font-light my-3">
-          Copyright © 2024 Joe Aguado
+          Copyright © 2025 Alvin Zainul
         </p>
 
         <div className="flex items-center md:gap-3 gap-6">

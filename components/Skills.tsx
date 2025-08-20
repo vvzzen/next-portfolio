@@ -14,15 +14,15 @@ const Skills = () => {
 
     <div className='w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10'>
         {workExperience.map((card) => (
-            <Button key={card.id} borderRadius='1.75rem' className='flex-1 text-white border-neutral-200 dark:border-slate-800'
+            <Button key={card.id} borderRadius='1.75rem' className='flex-1 text-white border-neutral-200 dark:border-slate-800 cursor-default'
             duration={Math.floor(Math.random() * 10000) + 10000 }>
-                <div className='flex flex-row items-center py-6 p-10'>
+                <div className='flex flex-row items-center justify-center py-6 p-10'>
                     <img src={card.thumbnail} className=' md:w-20 w-16' alt={card.thumbnail} />
                     <div className='ms-5'>
-                        <h1 className='text-start text-2xl font-bold mt-2'>
+                        <h1 className='text-center text-2xl font-bold mt-2'>
                             {card.title}
                         </h1>
-                        <p className='text-start text-white-100 mt-3 font-semibold'>
+                        <p className='text-center text-white-100 mt-3 font-semibold'>
                             {card.desc}
                         </p>
                     </div>
