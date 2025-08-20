@@ -7,7 +7,7 @@ A Big Thank You to all involved giving me feedback and helping me along the way.
 </p>
 
 
-### Next JS Portfolio - [view live](https://joeoverflowcode.github.io/next_portfolio/)
+### Next JS Portfolio - [view live](https://vvzzen.github.io/next_portfolio/)
 
 
 
