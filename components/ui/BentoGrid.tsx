@@ -3,7 +3,7 @@ import { BackgroundGradientAnimation } from "./GradientBg";
 import {GlobeDemo} from './GridGlobe'
 import Image from 'next/image'
 import ResumeButton from './ResumeButton'
-// import image from "../../public/profile.png"
+import image from "profile.png"
 
 
 export const BentoGrid = ({

@@ -121,26 +121,20 @@ export const projects = [
         "Integration with SPIONAM for vehicle mutation tracking"
       ],
       technical: [
-        "Frontend built with Next.js for modern web experience.",
-        "Backend services in Python for business logic and integration.",
-        "PostgreSQL as the main database for robust data management.",
-        "Integration with external government APIs (SPIONAM)."
+        "Frontend built with Next.js for modern web experience with backend services in Python integrated with PostgreSQL and Google Cloud storage for robust data management and integration. Synchronized and integrated with related government systems APIs",
       ],
       challenges: [
-        "Ensuring seamless integration and data synchronization with external government systems (SPIONAM).",
-        "Designing a flexible system to support both user and government workflows.",
-        "Managing complex tax rules and province-specific rate settings."
+        "Ensuring seamless integration and data synchronization with external government systems, while also keeping in mind a flexible system to support both user and government workflows. Also managing complex tax rules and coordinating province-specific rate and rules differences proves to be a challenge."
       ],
       // githubLink: "https://github.com/alvinzainul",
       stats: {
-        provinces: "30+",
-        vehicles: "10,000+",
-        integrations: "SPIONAM, others"
+        provinces: "38",
+        vehicles: "200,000+"
       }
     },
-    img: "placeholder.png",
+    img: "sipab.png",
     gallery: [
-      "placeholder.png"
+      "sipabform.png"
     ],
     iconLists: ["ts.svg", "next.svg", "tail.svg", "py.svg", "postgre.svg", "gcloud.svg"],
     // link: "https://github.com/alvinzainul",
