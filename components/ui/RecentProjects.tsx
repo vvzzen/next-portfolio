@@ -44,7 +44,7 @@ const RecentProjects = () => {
                 {iconLists.slice(0, 5).map((icon, index) => (
                   <div 
                     key={index} 
-                    className='w-8 h-8 rounded-full bg-black/50 border border-white/20 flex justify-center items-center'
+                    className='w-8 h-8 rounded-full bg-gray-700 border border-white/20 flex justify-center items-center'
                   >
                     <img src={`/${icon}`} alt={icon} className='w-4 h-4' />
                   </div>

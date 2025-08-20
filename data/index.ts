@@ -57,7 +57,7 @@ export const navItems = [
     },
     {
       id: 6,
-      title: "My Resume",
+      title: "My Curriculum Vitae",
       description: "Updated August 2025",
   className: "lg:col-span-2 md:col-span-3 md:row-span-2 lg:min-h-[6vh]",
       imgClassName: "",
@@ -70,58 +70,18 @@ export const navItems = [
 export const projects = [
   {
     id: 1,
-    title: "Enterprise Software Platform",
-    des: "Led the development of a scalable enterprise platform using modern tech stack, improving system performance by 40% and user satisfaction scores.",
-    expandedContent: {
-      overview: [
-        "This comprehensive platform serves over 10,000+ users daily with 99.9% uptime. The project involved leading a team of 8 developers to build a modern, scalable enterprise solution.",
-        "Key achievements include implementing microservices architecture, optimizing database queries for 3x faster response times, and building automated testing pipelines that reduced bugs by 75%."
-      ],
-      features: [
-        "Microservices architecture with Docker containerization",
-        "Real-time collaboration tools and messaging system",
-        "Advanced user management and role-based access control",
-        "Integration with 15+ third-party APIs and services",
-        "Automated testing and CI/CD pipeline deployment",
-        "Comprehensive analytics and monitoring dashboard"
-      ],
-      technical: [
-        "Built using React.js with TypeScript for type safety and maintainability. Implemented Redux for state management and React Query for efficient data fetching.",
-        "Backend developed with Node.js and Express, using PostgreSQL for primary data storage and Redis for caching. Implemented JWT authentication and OAuth 2.0 integration.",
-        "Deployed on AWS using EKS for container orchestration, with CloudFront CDN for global content delivery and RDS for managed database hosting."
-      ],
-      challenges: [
-        "One of the main challenges was migrating from a monolithic architecture to microservices while maintaining zero downtime. This required careful planning and gradual migration strategies.",
-        "Performance optimization was crucial due to the large user base. Implemented database indexing, query optimization, and caching strategies that improved response times by 3x."
-      ],
-      githubLink: "https://github.com/alvinzainul",
-      stats: {
-        users: "10,000+",
-        uptime: "99.9%",
-        performance: "+40%",
-        bugs: "-75%"
-      }
-    },
-    img: "p5.svg",
-    iconLists: ["re.svg", "js.svg", "tail.svg", "na.svg", "mdb.svg"],
-    link: "https://github.com/alvinzainul",
-  },
-  {
-    id: 5,
     title: "Integrated Fluid Interpretation System",
-    des: "Developed a webapp and ML-driven workflow for petrophysical fluid interpretation, integrating Python, Dataiku, Django, and visualization with three.js as part of research",
+    des: "Developed ML-driven workflow and surrounding well module for petrophysical fluid interpretation, integrating Python, Dataiku, Django, and visualization as part of research.",
     expandedContent: {
       overview: [
-        "A comprehensive solution for petrophysical fluid interpretation, combining advanced data processing, machine learning, and interactive visualization.",
+        "A comprehensive solution for petrophysical fluid interpretation, combining advanced data processing, log interpretations, machine learning, and interactive interface.",
         "Key contributions include a novel surrounding well module for attribute-based calculations, ML scoring for fluid interpretation, and a performant web interface for massive log data."
       ],
       features: [
         "Surrounding well module for petrophysical calculation influenced by logs in the well path surrounding proximity",
-        "ML-based scoring for fluid interpretation results",
+        "ML-based scoring for fluid interpretation results based from various interpretation methods' prediction",
         "Interactive log display with three.js/WebGL for large datasets",
-        "User-friendly webapp interface with Next.js, TypeScript, and Tailwind CSS",
-        "Backend powered by Python (Django) and PostgreSQL",
-        "Collaborative design and requirements gathering with stakeholders"
+        "User-friendly webapp interface with Next.js, TypeScript, and Tailwind CSS combined with backend powered by Python (Django) and PostgreSQL",
       ],
       technical: [
   "Data processing pipelines built in Dataiku using Python for feature engineering and attribute extraction, including development of a surrounding well module to calculate petrophysical values based on neighboring wells' attributes and improve interpretation accuracy. Implemented machine learning models to score and validate fluid interpretation results. Frontend webapp built with Next.js, leveraging three.js/WebGL for efficient rendering of massive log data. Backend services developed in Python with Django, using PostgreSQL for data storage and management."
@@ -137,124 +97,283 @@ export const projects = [
         accuracy: "In progress +80%"
       }
     },
-    img: "placeholder.png",
-    iconLists: ["js.svg", "tail.svg", "three.svg", "py.svg", "na.svg", "mdb.svg"],
-    link: "https://github.com/alvinzainul",
-  },
-  {
+    img: "mifi.png",
+    gallery: [
+      "beforesurr.png", "aftersurr.png", "logsidplay.png", "surrwellscribble.png"
+    ],
+    iconLists: ["ts.svg", "tail.svg", "three.svg", "py.svg", "postgre.svg", "diku.png", "skl.png", "next.svg"],
+    // link: "https://github.com/alvinzainul",
+  },{
     id: 2,
-    title: "AI-Powered Analytics Dashboard",
-  des: "Built an intelligent analytics platform with real-time data processing and machine learning insights for solving impactful cross-discipline problems.",
+    title: "SIPAB (Sistem Informasi Pajak Alat Berat)",
+    des: "Centralized heavy duty vehicles tax system. Registration, payment, and reporting for users; monitoring, rate settings, and integration for government.",
     expandedContent: {
       overview: [
-  "Developed an advanced analytics platform that processes over 1M+ data points daily, providing real-time insights and predictive analytics for solving impactful cross-discipline problems.",
-        "The platform combines machine learning algorithms with an intuitive React frontend to deliver actionable insights that reduced manual analysis time by 80%."
+        "Developed using Next.js, Python, and PostgreSQL.",
+        "App that centralizes the heavy duty vehicles tax system: from vehicle’s tax registration (to get vehicle number), payment, and owned vehicle tax report on user side, and general monitoring, province monitoring, and Bapenda province rate settings on government side.",
+        "Integrated with other government systems, like SPIONAM, to monitor the mutation of those heavy vehicles and ensure a synchronized governmental system."
       ],
       features: [
-        "Predictive analytics using machine learning models",
-        "Real-time data processing and visualization",
-        "Custom dashboard creation and sharing",
-        "Automated report generation and scheduling",
-        "Intelligent alerting system with ML-based anomaly detection",
-        "Multi-tenant architecture with role-based permissions"
+        "Vehicle tax registration and number issuance",
+        "Online payment and owned vehicle monitoring for users",
+        "General and province-level monitoring for government",
+        "Bapenda province rate management",
+        "Integration with SPIONAM for vehicle mutation tracking"
       ],
       technical: [
-        "Frontend built with React.js and D3.js for interactive data visualizations. Implemented custom chart components and responsive design for mobile compatibility.",
-        "Backend powered by Python with FastAPI framework, using pandas and scikit-learn for data processing and machine learning. Integrated with Apache Kafka for real-time data streaming.",
-        "Data infrastructure includes PostgreSQL for structured data, InfluxDB for time-series metrics, and Redis for caching. Deployed using Docker on AWS ECS."
+        "Frontend built with Next.js for modern web experience.",
+        "Backend services in Python for business logic and integration.",
+        "PostgreSQL as the main database for robust data management.",
+        "Integration with external government APIs (SPIONAM)."
       ],
       challenges: [
-        "Processing large volumes of real-time data required implementing efficient streaming architectures and optimizing database queries for sub-second response times.",
-        "Ensuring accuracy of machine learning predictions while maintaining system performance was achieved through model optimization and intelligent caching strategies."
+        "Ensuring seamless integration and data synchronization with external government systems (SPIONAM).",
+        "Designing a flexible system to support both user and government workflows.",
+        "Managing complex tax rules and province-specific rate settings."
       ],
-      githubLink: "https://github.com/alvinzainul",
+      // githubLink: "https://github.com/alvinzainul",
       stats: {
-        dataPoints: "1M+ daily",
-        accuracy: "+45%",
-        efficiency: "+80%",
-        responseTime: "<500ms"
+        provinces: "30+",
+        vehicles: "10,000+",
+        integrations: "SPIONAM, others"
       }
     },
-    img: "p6.svg",
-    iconLists: ["re.svg", "js.svg", "tail.svg", 'ca.svg' ],
-    link: "https://github.com/alvinzainul",
-  },    
-  {
+    img: "placeholder.png",
+    gallery: [
+      "placeholder.png"
+    ],
+    iconLists: ["ts.svg", "next.svg", "tail.svg", "py.svg", "postgre.svg", "gcloud.svg"],
+    // link: "https://github.com/alvinzainul",
+  },{
     id: 3,
-    title: "Mobile-First E-Commerce Solution",
-    des: "Designed and developed a responsive e-commerce platform with seamless user experience across all devices and payment integrations.",
+    title: "PetroNet",
+    des: "Dataiku webapp for ML-driven pore pressure prediction, featuring log display, chatbot, and ML insights.",
     expandedContent: {
       overview: [
-        "Full-stack e-commerce solution designed with mobile-first approach, featuring seamless user experience across all devices and comprehensive payment integrations.",
-        "The platform achieved 98% mobile performance score and increased conversion rates by 35% through optimized user flows and fast loading times."
+        "Developed as a Dataiku webapp (pure HTML, CSS, JS) serving as an interface to a machine learning model for pore pressure prediction.",
+        "The app provides interactive log display using d3.js, a chatbot for user queries, and ML-generated insights to assist geoscientists and engineers.",
+        "Developed supporting ML models to predict lithology, enhancing the accuracy of pore pressure predictions."
       ],
       features: [
-        "Responsive design optimized for mobile, tablet, and desktop",
-        "Multiple payment gateways including Stripe, PayPal, and Apple Pay",
-        "Real-time inventory management and tracking",
-        "Advanced product search and filtering system",
-        "Order tracking and automated email notifications",
-        "Admin dashboard with comprehensive analytics and reporting"
+        "Interactive log display with d3.js visualization",
+        "Chatbot interface for user interaction and support",
+        "ML-generated insights for pore pressure and lithology prediction",
+        "Seamless integration with Dataiku ML pipelines"
       ],
       technical: [
-        "Built with Next.js for server-side rendering and optimal SEO performance. Styled with Tailwind CSS for responsive design and Framer Motion for smooth animations.",
-        "Backend API developed with Node.js and Express, integrated with Stripe for payment processing and SendGrid for email automation. MongoDB used for flexible product catalog management.",
-        "Deployed on Vercel with Edge Functions for global performance, integrated with Cloudinary for image optimization and AWS S3 for file storage."
+        "Frontend built as a single-page webapp using HTML, CSS, and JavaScript for maximum compatibility with Dataiku webapp requirements.",
+        "Log visualization implemented with d3.js for interactive and scalable data display.",
+        "Chatbot built with vanilla JS, integrated with backend ML models via Dataiku APIs.",
+        "ML models for pore pressure and lithology prediction developed and deployed within Dataiku."
       ],
       challenges: [
-        "Optimizing mobile performance required implementing lazy loading, image optimization, and efficient caching strategies to achieve sub-2-second load times.",
-        "Integrating multiple payment providers while maintaining PCI compliance and ensuring secure transaction processing across different markets and currencies."
+        "Building a rich, interactive UI using only vanilla JS, HTML, and CSS (no frameworks) to comply with Dataiku webapp constraints.",
+        "Integrating real-time ML predictions and insights into the webapp interface.",
+        "Ensuring accurate lithology prediction to support reliable pore pressure results."
       ],
-      githubLink: "https://github.com/alvinzainul",
+      // githubLink: "https://github.com/alvinzainul",
       stats: {
-        performance: "98%",
-        conversion: "+35%",
-        loadTime: "<2s",
-        mobile: "100%"
+        wells: "100+",
+        logs: "1M+ entries",
+        models: "2 (pore pressure, lithology)"
       }
     },
-    img: "p7.svg",
-    iconLists: ["re.svg", "js.svg", 'ca.svg', 'f.svg', "tail.svg",],
-    link: "https://github.com/alvinzainul",
-  },
-  {
-    id: 4,
-    title: "Cloud Infrastructure Automation",
-    des: "Implemented DevOps solutions and cloud infrastructure automation, reducing deployment time by 60% and improving system reliability.",
-    expandedContent: {
-      overview: [
-        "Comprehensive DevOps solution implementing cloud infrastructure automation that reduced deployment time by 60% and improved system reliability across multiple environments.",
-        "Built CI/CD pipelines using Docker, Kubernetes, and AWS services with automated infrastructure provisioning and monitoring systems."
-      ],
-      features: [
-        "Automated CI/CD pipelines with GitHub Actions",
-        "Infrastructure as Code using Terraform and CloudFormation",
-        "Container orchestration with Kubernetes and Docker",
-        "Comprehensive monitoring and alerting with Prometheus and Grafana",
-        "Automated backup and disaster recovery procedures",
-        "Security scanning and vulnerability assessment integration"
-      ],
-      technical: [
-        "Infrastructure built on AWS using EKS for Kubernetes orchestration, with auto-scaling groups and load balancers for high availability. Terraform used for infrastructure provisioning and version control.",
-        "CI/CD pipelines implemented with GitHub Actions and Jenkins, featuring automated testing, security scanning, and blue-green deployments. Docker images optimized for production with multi-stage builds.",
-        "Monitoring stack includes Prometheus for metrics collection, Grafana for visualization, and ELK stack for centralized logging. Integrated with PagerDuty for incident management."
-      ],
-      challenges: [
-        "Migrating legacy applications to cloud-native architecture required careful planning and gradual migration strategies to ensure zero-downtime deployments.",
-        "Implementing comprehensive monitoring and alerting systems while managing costs and ensuring security compliance across multiple AWS regions and environments."
-      ],
-      githubLink: "https://github.com/alvinzainul",
-      stats: {
-        deployment: "-60%",
-        reliability: "99.9%",
-        failures: "-90%",
-        automation: "100%"
-      }
+    img: "placeholder.png",
+    gallery: [
+      "placeholder.png"
+    ],
+    iconLists: ["js.svg", "diku.png", "skl.png", "d3.svg", "py.svg"],
+    // link: "https://github.com/alvinzainul",
     },
-    img: "p8.svg",
-    iconLists: ["re.svg", "js.svg", 'ca.svg', "tail.svg",],
-    link: "https://github.com/alvinzainul",
-  },
+    {
+      id: 4,
+      title: "Asymmetric Hybrid Attention Transformer",
+      des: "Assimilated HAT model and Asymmetric Convolution to upscale medical images, making affordable imaging machines more useful for diagnosis.",
+      expandedContent: {
+        overview: [
+          "Developed a hybrid model combining HAT (Hybrid Attention Transformer) and Asymmetric Convolution to enhance and upscale medical images.",
+          "Aimed to make medical imaging more accessible by improving results from lower-end, affordable, and widely available imaging machines.",
+          "Supports better diagnosis by providing higher quality images from less capable hardware."
+        ],
+        features: [
+          "Hybrid model: HAT + Asymmetric Convolution",
+          "Medical image super-resolution and upscaling",
+          "Improved diagnostic value from affordable imaging devices",
+          "Accessible AI for healthcare"
+        ],
+        technical: [
+          "Model architecture based on HAT (Hybrid Attention Transformer) with custom asymmetric convolution layers.",
+          "Trained on medical imaging datasets for super-resolution tasks.",
+          "Implemented in Python using PyTorch and TensorFlow."
+        ],
+        challenges: [
+          "Integrating transformer-based attention with convolutional upscaling.",
+          "Ensuring model generalizes well to various imaging modalities and device qualities.",
+          "Balancing performance and computational efficiency for real-world deployment."
+        ],
+        // githubLink: "https://github.com/alvinzainul",
+        stats: {
+          modalities: "3+",
+          images: "10,000+",
+          improvement: "+30% PSNR"
+        }
+      },
+      img: "placeholder.png",
+      gallery: [
+        "placeholder.png"
+      ],
+      iconLists: ["py.svg", "skl.png", "tf.svg"],
+      // link: "https://github.com/alvinzainul",
+    },
+    {
+      id: 5,
+      title: "Data Pipeline ETL on Azure",
+      des: "Robust ETL pipeline on Azure: ingested SAP and OBD data, transformed with Spark for dynamic pricing, customer, and asset monitoring.",
+      expandedContent: {
+        overview: [
+          "Built a robust ETL pipeline on Azure to ingest and consolidate SAP and generated OBD data.",
+          "Transformed and prepared data for use in key business projects such as dynamic pricing, customer monitoring, and asset monitoring."
+        ],
+        features: [
+          "Data ingestion from SAP and OBD sources",
+          "Data consolidation and cleaning",
+          "Transformation using Apache Spark",
+          "Support for dynamic pricing, customer, and asset monitoring use cases"
+        ],
+        technical: [
+          "Azure Data Factory for orchestration and pipeline management.",
+          "Apache Spark for scalable data transformation and processing.",
+          "Integration with Azure Data Lake and downstream analytics platforms."
+        ],
+        challenges: [
+          "Handling large-scale, heterogeneous data sources (SAP, OBD).",
+          "Ensuring data quality and reliability throughout the pipeline.",
+          "Optimizing Spark jobs for performance and cost on Azure."
+        ],
+        // githubLink: "https://github.com/alvinzainul",
+        stats: {
+          sources: "SAP, OBD",
+          volume: "TBs+",
+          useCases: "Dynamic pricing, monitoring"
+        }
+      },
+      img: "placeholder.png",
+      gallery: [
+        "placeholder.png"
+      ],
+      iconLists: ["azure.svg", "spark.svg", "py.svg", "sap.svg"],
+      // link: "https://github.com/alvinzainul",
+      },
+      {
+        id: 6,
+        title: "180DC UGM Profile Website",
+        des: "Profile and inquiry website for 180DC UGM, combining WordPress CMS and React with a functional client inquiry form.",
+        expandedContent: {
+          overview: [
+            "Developed the official profile website for 180DC UGM, integrating WordPress for content management and React for a modern frontend.",
+            "Implemented a functional inquiry form as a starting point for potential client engagement.",
+            "Site is no longer maintained by me, but the groundwork and architecture remain the same."
+          ],
+          features: [
+            "WordPress-powered content management",
+            "React frontend for dynamic user experience",
+            "Functional client inquiry form"
+          ],
+          technical: [
+            "WordPress as headless CMS, React for frontend.",
+            "Form handling and integration with backend for inquiries."
+          ],
+          challenges: [
+            "Integrating WordPress with a custom React frontend.",
+            "Ensuring smooth content updates and form submissions."
+          ],
+          link: "https://www.180dcugm.org/",
+          stats: {
+            inquiries: "Active during tenure",
+            cms: "WordPress",
+            frontend: "React"
+          }
+        },
+        img: "placeholder.png",
+        gallery: [
+          "placeholder.png"
+        ],
+        iconLists: ["re.svg", "tail.svg", "wp.svg"],
+        link: "https://www.180dcugm.org/",
+      },
+      {
+        id: 7,
+        title: "Gelanggang Expo 2022",
+        des: "Webapp for GELEX 2022, an expo and festival for new students, featuring GSAP animations and a virtual exhibition with Unity integration.",
+        expandedContent: {
+          overview: [
+            "Developed the webapp for Gelanggang Expo 2022 (GELEX), an event welcoming new students and introducing them to university activities, communities, and organizations.",
+            "Used GSAP for advanced, fancy animations and embedded a Unity-based virtual exhibition."
+          ],
+          features: [
+            "Event information and organization showcase",
+            "GSAP-powered advanced animations",
+            "Virtual exhibition via Unity embedding"
+          ],
+          technical: [
+            "Frontend built with React and GSAP for animation.",
+            "Unity WebGL embedded for virtual exhibition experience."
+          ],
+          challenges: [
+            "Coordinating content and features for a large-scale university event.",
+            "Integrating Unity WebGL smoothly into the webapp."
+          ],
+          link: "https://ukm.ugm.ac.id/2022/gelex/",
+          stats: {
+            visitors: "Thousands+",
+            orgs: "50+",
+            virtual: "Unity WebGL"
+          }
+        },
+        img: "placeholder.png",
+        gallery: [
+          "placeholder.png"
+        ],
+        iconLists: ["re.svg", "ts.svg", "tail.svg", "gsap.svg", "unity.svg"],
+        link: "https://ukm.ugm.ac.id/2022/gelex/",
+      },
+      {
+        id: 8,
+        title: "Porsenigama 2021",
+        des: "Webapp for Porsenigama 2021, the largest inter-faculty sports tournament, with React frontend, Express backend, and Firebase NoSQL.",
+        expandedContent: {
+          overview: [
+            "Developed the webapp for Porsenigama 2021, a major inter-faculty sports tournament in Indonesia.",
+            "Featured live tables, standings, and match scores with a React frontend, Express backend, and Firebase NoSQL database.",
+            "Site is now archived but was fully functional during the event."
+          ],
+          features: [
+            "Live tables and standings",
+            "Real-time match score updates",
+            "Comprehensive event information"
+          ],
+          technical: [
+            "Frontend in React, backend in Express.js.",
+            "Firebase NoSQL for real-time data and updates."
+          ],
+          challenges: [
+            "Handling real-time updates for large numbers of users.",
+            "Ensuring data consistency and reliability with Firebase."
+          ],
+          link: "https://ukm.ugm.ac.id/2021/porsenigama/",
+          stats: {
+            faculties: "18+",
+            matches: "100+",
+            live: "Real-time updates"
+          }
+        },
+        img: "placeholder.png",
+        gallery: [
+          "placeholder.png"
+        ],
+        iconLists: ["re.svg", "js.svg", "tail.svg", "ex.svg", "fbase.svg"],
+        link: "https://ukm.ugm.ac.id/2021/porsenigama/",
+      },
 ];  export const testimonials = [
     {
       quote:

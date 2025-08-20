@@ -6,8 +6,19 @@ interface ProjectPageProps {
   params: { id: string }
 }
 
+type ExpandedContent = {
+  overview?: string[];
+  features?: string[];
+  technical?: string[];
+  challenges?: string[];
+  link?: string;
+  githubLink?: string;
+  stats?: { [key: string]: string };
+  [key: string]: any;
+};
+
 export default function ProjectPage({ params }: ProjectPageProps) {
-  const project = projects.find(p => p.id === parseInt(params.id))
+  const project = projects.find(p => p.id === parseInt(params.id)) as (typeof projects)[number] & { expandedContent?: ExpandedContent };
   
   if (!project) {
     notFound()
@@ -32,7 +43,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
             {project.title}
           </h1>
           
-          <p className="text-xl text-gray-300 max-w-3xl leading-relaxed">
+          <p className="text-xl text-gray-300 leading-relaxed">
             {project.des}
           </p>
         </div>
@@ -92,12 +103,12 @@ export default function ProjectPage({ params }: ProjectPageProps) {
               </div>
             )}
 
-            {/* Technical Implementation */}
-            {project.expandedContent?.technical && project.expandedContent.technical.length > 0 && (
+            {/* Challenges & Solutions (moved below Technical) */}
+            {project.expandedContent?.challenges && project.expandedContent.challenges.length > 0 && (
               <div className="border border-white/[0.2] rounded-3xl p-8 bg-gradient-to-br from-gray-900/50 to-black/50 backdrop-blur-sm">
-                <h2 className="text-2xl font-bold text-white mb-6">Technical Implementation</h2>
+                <h2 className="text-2xl font-bold text-white mb-6">Challenges & Solutions</h2>
                 <div className="space-y-4">
-                  {project.expandedContent.technical.map((paragraph, index) => (
+                  {project.expandedContent.challenges.map((paragraph, index) => (
                     <p key={index} className="text-gray-300 leading-relaxed">
                       {paragraph}
                     </p>
@@ -106,12 +117,32 @@ export default function ProjectPage({ params }: ProjectPageProps) {
               </div>
             )}
 
-            {/* Challenges & Solutions */}
-            {project.expandedContent?.challenges && project.expandedContent.challenges.length > 0 && (
+
+            {/* Gallery Section (moved up) */}
+            {project.gallery && project.gallery.length > 0 && (
+              <div className="w-full col-span-full mt-0 mb-12">
+                <h2 className="text-2xl font-bold text-white mb-6">Gallery</h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                  {project.gallery.map((img, idx) => (
+                    <div key={idx} className="w-full aspect-square bg-[#181b2b] rounded-2xl overflow-hidden flex items-center justify-center border border-white/10">
+                      <img
+                        src={`/${img}`}
+                        alt={`Gallery image ${idx + 1}`}
+                        className="object-cover w-full h-full"
+                        loading="lazy"
+                      />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Technical Implementation (moved below Gallery) */}
+            {project.expandedContent?.technical && project.expandedContent.technical.length > 0 && (
               <div className="border border-white/[0.2] rounded-3xl p-8 bg-gradient-to-br from-gray-900/50 to-black/50 backdrop-blur-sm">
-                <h2 className="text-2xl font-bold text-white mb-6">Challenges & Solutions</h2>
+                <h2 className="text-2xl font-bold text-white mb-6">Technical Implementation</h2>
                 <div className="space-y-4">
-                  {project.expandedContent.challenges.map((paragraph, index) => (
+                  {project.expandedContent.technical.map((paragraph, index) => (
                     <p key={index} className="text-gray-300 leading-relaxed">
                       {paragraph}
                     </p>
@@ -140,11 +171,12 @@ export default function ProjectPage({ params }: ProjectPageProps) {
             </div>
 
             {/* Links */}
-            <div className="border border-white/[0.2] rounded-3xl p-6 bg-gradient-to-br from-gray-900/50 to-black/50 backdrop-blur-sm">
-              <h3 className="text-lg font-bold text-white mb-4">Project Links</h3>
-              <div className="space-y-3">
-                <a
-                  href={project.link}
+            {project.link && (
+              <div className="border border-white/[0.2] rounded-3xl p-6 bg-gradient-to-br from-gray-900/50 to-black/50 backdrop-blur-sm">
+                <h3 className="text-lg font-bold text-white mb-4">Project Links</h3>
+                <div className="space-y-3">
+                  <a
+                    href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 text-blue-300 hover:text-blue-200 transition-colors p-3 rounded-xl bg-black/30 hover:bg-black/50"
@@ -169,7 +201,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
                   </a>
                 )}
               </div>
-            </div>
+            </div>)}
 
             {/* Project Stats */}
             {project.expandedContent?.stats && (
