@@ -53,9 +53,9 @@ export default function ProjectPage({ params }: ProjectPageProps) {
       <div className="px-4 mb-12">
         <div className="max-w-6xl mx-auto">
           <div className="relative w-full h-[50vh] rounded-3xl overflow-hidden bg-[#13162d] border border-white/[0.2]">
-            <img src="bg.png" alt="bg-img" className="w-full h-full object-cover"/>
+            <img src="/bg.png" alt="bg-img" className="w-full h-full object-cover"/>
             <img 
-              src={`${project.img}`} 
+              src={`/${project.img}`} 
               alt={project.title}
               className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 max-h-full max-w-full object-contain'
             />
@@ -126,7 +126,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
                   {project.gallery.map((img, idx) => (
                     <div key={idx} className="w-full aspect-square bg-[#181b2b] rounded-2xl overflow-hidden flex items-center justify-center border border-white/10">
                       <img
-                        src={`${img}`}
+                        src={`/${img}`}
                         alt={`Gallery image ${idx + 1}`}
                         className="object-cover w-full h-full"
                         loading="lazy"
@@ -164,7 +164,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
                     key={index} 
                     className="w-12 h-12 rounded-xl bg-black/50 border border-white/20 flex justify-center items-center"
                   >
-                    <img src={`${icon}`} alt={icon} className="w-6 h-6" />
+                    <img src={`/${icon}`} alt={icon} className="w-6 h-6" />
                   </div>
                 ))}
               </div>
