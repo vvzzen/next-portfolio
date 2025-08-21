@@ -287,7 +287,7 @@ export const projects = [
           ],
           link: "https://ukm.ugm.ac.id/2022/gelex/",
           stats: {
-            concurrent_visitors: "Tens of Thousands+",
+            concurrent_visitors: "20000+",
             orgs: "50+",
           }
         },
@@ -320,7 +320,7 @@ export const projects = [
           stats: {
             faculties: "18",
             matches: "100+",
-            concurrent_visitors: "Tens of Thousands+",
+            concurrent_visitors: "20000+",
           }
         },
         img: "porseni.png",
